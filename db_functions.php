@@ -1,7 +1,7 @@
 <?php
 //$_GLOBALS['link'] = $link;
 $tiedosto_tunnukset = "../../tunnukset.php";
-if (file_exists($tiedosto_tunnukset) {
+if (file_exists($tiedosto_tunnukset)) {
   include($tiedosto_tunnukset);
   }
 else {
@@ -29,7 +29,7 @@ else {
 
 function db_connect(){
 static $link;
-if (!isset($link) or empty($link) {	
+if (!isset($link) or empty($link)) {	
   $link = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB);
   }	
 return $link;
@@ -44,12 +44,12 @@ $result = mysqli_query($link,$query) or
 return $result;	
 }
 
-function mysqli_insert_id_omni{
+function mysqli_insert_id_omni(){
 $link = db_connect();	
 return mysqli_insert_id($link);	
 }
 
-function mysqli_affected_rows_omni{
+function mysqli_affected_rows_omni(){
 $link = db_connect();	
 return mysqli_affected_rows($link);	
 }
