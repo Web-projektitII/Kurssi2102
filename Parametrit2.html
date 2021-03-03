@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+  "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+<head>
+<meta charset=UTF-8>
+<title>Rekisteröityminen</title>
+</head>
+<style>
+label{display:inline-block;color:blue;width:150px;}
+</style> 
+<body>
+<br>
+<form action="tarkista.php" method="post">
+   <input type="hidden" name="osasto" value="Espoo">
+   <label>nimi:</label><input type="text" name="nimi"><br>
+   <label>sähköposti:</label><input type="text" name="email"><br>
+   <label>salasana:</label><input type="password" name="ssana"><br>
+    <label>sukupuoli:</label><br>
+    <label>mies:</label><input type="radio" name="sukupuoli" value="mies"><br>
+    <label>nainen:</label><input type="radio" name="sukupuoli" value="nainen"><br>
+    <label>muu:</label><input type="radio" name="sukupuoli" value="muu"><br> 
+    <label>maakunta:</label><select name="maakunta">
+		<option  value="Ahvenanmaa">Ahvenanmaa</option>
+		<option  value="Etelä-Karjala">Etelä-Karjala</option>
+		<option  value="Etelä-Pohjanmaa">Etelä-Pohjanmaa</option>
+		<option  value="Etelä-Savo">Etelä-Savo</option>
+		<option  value="Kainuu">Kainuu</option>
+		<option  value="Kanta-Häme">Kanta-Häme</option>
+		<option  value="Keski-Pohjanmaa">Keski-Pohjanmaa</option>
+		<option  value="Keski-Suomi">Keski-Suomi</option>
+		<option  value="Kymenlaakso">Kymenlaakso</option>	
+		<option  value="Lappi">Lappi</option>
+		<option  value="Pirkanmaa">Pirkanmaa</option>
+		<option  value="Pohjanmaa">Pohjanmaa</option>	
+		<option  value="Pohjois-Karjala">Pohjois-Karjala</option>
+		<option  value="Pohjois-Pohjanmaa">Pohjois-Pohjanmaa</option>
+		<option  value="Pohjois-Savo">Pohjois-Savo</option>		
+		<option  value="Päijät-Häme">Päijät-Häme</option>
+		<option  value="Satakunta">Satakunta</option>	
+		<option  value="Uusimaa">Uusimaa</option>
+		<option  value="Varsinais-Suomi">Varsinais-Suomi</option>			
+		</select><br>
+   lemmikit:<br>
+   koira:   <input type="checkbox"	name="lemmikki[]" value="koira"><br>
+   kissa:   <input type="checkbox"	name="lemmikki[]" value="kissa"><br>
+   matelija:<input type="checkbox"	name="lemmikki[]" value="matelija"><br>
+   jyrsijä:  <input type="checkbox"	name="lemmikki[]" value="jyrsijä"><br>
+   kala:     <input type="checkbox"	name="lemmikki[]" value="kala"><br>	
+   muu:      <input type="checkbox"	name="lemmikki[]" value="muu"><br>	
+   kuvaus:   <input type="text" name="kuvaus"<br>
+   <p><input type="submit" name="kirjaudu" value="Kirjaudu sisään"></p>     
+</form>
+
+</body>
+</html>
+

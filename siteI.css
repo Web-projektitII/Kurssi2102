@@ -1,0 +1,54 @@
+body,select,textarea {font-family:Arial;}
+/*fieldset {width:70%;}*/
+label {
+  /*display:inline-block;
+  width:140px;
+  color:blue;
+  vertical-align:top;*/
+  }  
+input,textarea,select {
+    margin-bottom:4px;
+    font-size:16px;}  
+/*.radio {display:inline;padding-right:4px;padding-left:4px;white-space:nowrap;}*/
+.radio label {padding-left:8px;}
+.radio input {margin-right:8px;}
+.checkbox label {padding-left:8px;}
+.checkbox input {margin-right:8px;}
+.yksikko {padding-left:8px;}
+/*.teksti {display:inline-block;width:200px;}
+.lukema {display:inline-block;width:50px;}
+.ul-flex-row {flex-direction:row;flex-wrap:wrap;}*/
+.virhe_p {color:red;}
+.virhe_missing,.virhe_numeric {
+    display:inline-block;
+    width:20px;
+    color:red;
+    vertical-align:top;}
+.virhe_numeric::after {content:'*';}
+.tyhja {
+    display:inline-block;
+    width:20px;
+    visibility:hidden;} 
+.form-group {
+    margin-bottom:0;
+    }  
+.control-label {
+    white-space:nowrap;
+    min-width:100px;
+    }    
+.form-group .lukema {
+    display:inline-block;
+    width:100px;}
+/*@media (min-width:576px) {
+  label:not(.label-cb) {
+    width: 100%;
+  }
+}
+
+
+@media (max-width:576px) {
+  label:not(.label-cb) {
+    width: 100%;
+  }
+}*/
+

@@ -1,0 +1,51 @@
+.relative {position:relative;}    
+body,select,textarea {font-family:Arial;}
+/*fieldset {width:70%;}*/
+#action_form label {
+  /*display:inline-block;
+  width:140px;
+  vertical-align:top;*/
+  color:blue;
+  }  
+#action_form select {
+  width:auto;
+  }    
+.control-label {
+  white-space:nowrap;
+  min-width:120px;
+}
+.padding-top-10 {padding-top:10px;}
+.list-group-item label {white-space:nowrap;}
+.list-group-item {border:0;}
+/*.control-label {min-width:150px;}*/
+.checkbox {margin-left:25px;}
+/*input,textarea,select {font-size:16px;}*/  
+/*.radio {display:inline;padding-right:4px;padding-left:4px;}*/
+.yksikko {padding-left:4px;}
+/*.teksti {display:inline-block;width:200px;}*/
+.lukema {display:inline-block;width:100px;}
+.ul-inline {flex-direction:row;}
+.virhe_group {list-style-type:none;}
+.virhe_p {
+    color:red;
+    list-style-type:none;}
+.virhe_missing,.virhe_numeric {
+    position:absolute;
+    display:inline-block;
+    width:20px;
+    color:red;}
+.virhe_missing_text,.virhe_numeric_text {
+    display:inline-block;
+    width:20px;
+    color:red;}
+.virhe_numeric::after {content:'*';}
+.virhe_numeric_text::after {content:'*';}
+.tyhja {
+    position:absolute;
+    display:inline-block;
+    width:20px;
+    visibility:hidden;}
+#footer p {
+    text-align:center;
+    font-size:1.2rem;
+    font-weight:bold;}

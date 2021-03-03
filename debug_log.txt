@@ -1,0 +1,72 @@
+2021-03-01 12:53:36 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 534,kielet()
+2021-03-01 12:53:36 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 569,rating()
+2021-03-01 12:53:36 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 574,specialfeatures()
+2021-03-01 13:00:00 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 534,kielet()
+2021-03-01 13:00:00 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 569,rating()
+2021-03-01 13:00:00 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 574,specialfeatures()
+2021-03-01 13:00:31 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 534,kielet()
+2021-03-01 13:00:31 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 569,rating()
+2021-03-01 13:00:31 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 574,specialfeatures()
+2021-03-01 13:02:16 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 534,kielet()
+2021-03-01 13:02:16 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 569,rating()
+2021-03-01 13:02:16 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 574,specialfeatures()
+2021-03-01 13:02:20 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 534,kielet()
+2021-03-01 13:02:20 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 569,rating()
+2021-03-01 13:02:20 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 574,specialfeatures()
+2021-03-01 13:02:44 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 534,kielet()
+2021-03-01 13:02:44 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 569,rating()
+2021-03-01 13:02:44 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 574,specialfeatures()
+2021-03-01 13:04:33 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 500,kielet()
+2021-03-01 13:04:33 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 535,rating()
+2021-03-01 13:04:33 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 540,specialfeatures()
+2021-03-01 13:05:03 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 500,kielet()
+2021-03-01 13:05:03 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 535,rating()
+2021-03-01 13:05:03 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 540,specialfeatures()
+2021-03-01 13:35:48 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 500,kielet()
+2021-03-01 13:35:48 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 535,rating()
+2021-03-01 13:35:48 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 540,specialfeatures()
+2021-03-01 14:06:37 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 500,kielet()
+2021-03-01 14:06:38 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 535,rating()
+2021-03-01 14:06:38 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 540,specialfeatures()
+2021-03-01 14:06:50 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 500,kielet()
+2021-03-01 14:06:51 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 535,rating()
+2021-03-01 14:06:51 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 540,specialfeatures()
+2021-03-02 08:58:34 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 500,kielet()
+2021-03-02 08:58:34 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 535,rating()
+2021-03-02 08:58:34 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 540,specialfeatures()
