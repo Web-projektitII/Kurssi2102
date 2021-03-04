@@ -54,7 +54,7 @@ console.log('regexp:',testi);
 <script>
 function tulosta_virhe(nimi,data){
   toggleError(nimi);
-  var virhe_elementti = querySelector("[name='"+nimi+"'] ~ .invalid-feedback");
+  var virhe_elementti = document.querySelector("[name='"+nimi+"'] ~ .invalid-feedback");
   virhe_elementti.innerHTML = data;
   }
 
