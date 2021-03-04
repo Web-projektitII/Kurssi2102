@@ -69,7 +69,7 @@ if ($db->connect_errno){
   exit;
   }  
 
-if (isset($_POST['title']) && !isset($_POST['painike']){
+if (isset($_POST['title']) && !isset($_POST['validate'])){
   $title = trim(strip_tags($_POST['title'])); 	
   $title = $db->real_escape_string($title);
   $query = "SELECT 1 FROM film WHERE title = '$title'";

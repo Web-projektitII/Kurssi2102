@@ -53,17 +53,45 @@ console.log('regexp:',testi);
 
 <script>
 function tulosta_virhe(nimi,data){
+  /* Bootstrap 4-virhemuotoilu */
   toggleError(nimi);
   var virhe_elementti = document.querySelector("[name='"+nimi+"'] ~ .invalid-feedback");
   virhe_elementti.innerHTML = data;
+  /* setCustomerValidity(data) asettaa 
+     customError- ja samalla checkValidity()-arvoksi true,
+     kun data <> '', muuten arvo on false. */
+  var input = document.querySelector("[name='"+nimi+"']");
+  input.setCustomValidity(data);
+  console.log("customError:"+input.validity.customError);
+  /* reportValidity() näyttäisi selaimen virheilmoituksen, tässä
+     virheilmoitukset tulostetaan Bootstrap 4-mukaisesti.*/
+  //input.reportValidity();
+  //alert(input.checkValidity());
   }
+
+  function removeError(nimi){
+  var input = document.querySelector("[name='"+nimi+"']");
+  /* checkValidity()-arvoksi saadaan false */
+  input.setCustomValidity('');
+  /* Bootstrap 4-virhemuotoilu */
+  input.classList.remove('is-invalid');
+  var virhe_elementti = document.querySelector("[name='"+nimi+"'] ~ .invalid-feedback");
+  virhe_elementti.innerHTML = "Kirjoita nimi";
+  /* Huom. reportValidity() jätetään pois */
+  console.log("customError:"+input.validity.customError);
+  }   
 
 function tarkistus(element){
 /*event.preventDefault();
 event.stopPropagation();*/
 var nimi = element.name;
+var arvo = element.value;
+if (arvo == '') {
+  removeError(nimi);
+  return false;
+  }
 var formData = new FormData();
-formData.append(nimi, element.value);
+formData.append(nimi,arvo);
 fetch('./tehtava_lomakekasittelija.php', {
   method: 'POST',
   body: formData
@@ -72,12 +100,12 @@ fetch('./tehtava_lomakekasittelija.php', {
 .then(data => {
   console.log('Success:', data);
   if (data !== 'OK') tulosta_virhe(nimi,data);
+  else removeError(nimi);
   })
 .catch((error) => {
   console.error('Error:',error);
   tulosta_virhe(nimi,error);
 });
-
 return false;   
 }     
  
@@ -89,8 +117,10 @@ return false;   */
     
 function toggleError(nimi){
   //$("[name='"+nimi+"']").parent().find(".form-control").addClass('is-invalid');
-  $("[name='"+nimi+"']").addClass('is-invalid');
+   $("[name='"+nimi+"']").addClass('is-invalid');
   }    
+  
+
   
 function piilotaVirheet(){
   $('#palaute').text('');  
