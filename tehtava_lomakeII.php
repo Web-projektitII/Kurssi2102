@@ -52,7 +52,35 @@ console.log('regexp:',testi);
 </style>
 
 <script>
-    
+function tulosta_virhe(nimi,data){
+  toggleError(nimi);
+  var virhe_elementti = querySelector("[name='"+nimi+"'] ~ .invalid-feedback");
+  virhe_elementti.innerHTML = data;
+  }
+
+function tarkistus(element){
+/*event.preventDefault();
+event.stopPropagation();*/
+var nimi = element.name;
+var formData = new FormData();
+formData.append(nimi, element.value);
+fetch('./tehtava_lomakekasittelija.php', {
+  method: 'POST',
+  body: formData
+  })
+.then(response => response.json())
+.then(data => {
+  console.log('Success:', data);
+  if (data !== 'OK') tulosta_virhe(nimi,data);
+  })
+.catch((error) => {
+  console.error('Error:',error);
+  tulosta_virhe(nimi,error);
+});
+
+return false;   
+}     
+ 
 function validate_jquery(event){
 /*event.preventDefault();
 event.stopPropagation();
@@ -474,7 +502,7 @@ while ($row = $result->fetch_assoc()){
 <div class="form-group row">
 <label class="control-label col-sm-2 relative">Nimi:</label><span class="<?php virhe('title');?>">*</span>
 <div class="col-sm-10">
-<input required class="form-control teksti" type="text" name="title" value="<?php nayta('title');?>">
+<input id = "title" onchange="tarkistus(this)" required class="form-control teksti" type="text" name="title" value="<?php nayta('title');?>">
 <div class="invalid-feedback">Kirjoita nimi.</div>
 <?php server_validation('title');?>
 </div></div>

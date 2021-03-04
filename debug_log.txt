@@ -70,3 +70,15 @@ tehtava_lomakeII.php,rivi 500,kielet()
 tehtava_lomakeII.php,rivi 535,rating()
 2021-03-02 08:58:34 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
 tehtava_lomakeII.php,rivi 540,specialfeatures()
+2021-03-04 11:24:24 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 500,kielet()
+2021-03-04 11:24:24 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 535,rating()
+2021-03-04 11:24:24 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 540,specialfeatures()
+2021-03-04 13:25:35 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 525,kielet()
+2021-03-04 13:25:36 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 560,rating()
+2021-03-04 13:25:36 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 565,specialfeatures()
