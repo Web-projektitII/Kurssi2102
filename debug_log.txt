@@ -465,3 +465,186 @@ tehtava_lomakeII.php,rivi 598,specialfeatures()
 2021-03-04 22:14:26 tehtava_lomakekasittelija.php,post:array (
   'title' => 'zorro',
 )
+2021-03-05 09:16:00 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 558,kielet()
+2021-03-05 09:16:00 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 593,rating()
+2021-03-05 09:16:00 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 598,specialfeatures()
+2021-03-05 09:16:17 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 558,kielet()
+2021-03-05 09:16:18 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 593,rating()
+2021-03-05 09:16:18 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 598,specialfeatures()
+2021-03-05 09:18:57 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'zorro ARK',
+)
+2021-03-05 09:19:28 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'zorro',
+)
+2021-03-05 09:21:35 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'zorro ARK',
+)
+2021-03-05 09:23:00 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'zorro',
+)
+2021-03-05 09:23:46 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'zorro ARK',
+)
+2021-03-05 10:00:33 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'zorro',
+)
+2021-03-05 10:00:39 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'zorro ARK',
+)
+2021-03-05 10:00:50 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'zorro',
+)
+2021-03-08 09:03:28 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 558,kielet()
+2021-03-08 09:03:28 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 593,rating()
+2021-03-08 09:03:28 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 598,specialfeatures()
+2021-03-08 09:04:44 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 558,kielet()
+2021-03-08 09:04:44 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 593,rating()
+2021-03-08 09:04:44 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 598,specialfeatures()
+2021-03-08 09:08:48 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'zorro ark',
+)
+2021-03-08 09:09:21 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'zorro',
+)
+2021-03-08 09:16:48 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'zerro ark',
+)
+2021-03-08 09:16:53 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'zerro ar',
+)
+2021-03-08 09:17:02 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'zerro ark',
+)
+2021-03-08 09:18:35 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'zorro ARK',
+)
+2021-03-08 09:19:42 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'zorro ark',
+)
+2021-03-08 09:20:10 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'zorro',
+)
+2021-03-08 09:20:37 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'zorro',
+)
+2021-03-08 09:22:56 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'zorro ark',
+)
+2021-03-08 09:23:11 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'zorro ARK',
+)
+2021-03-08 09:23:14 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'zorro ',
+)
+2021-03-08 09:23:20 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'zorro',
+)
+2021-03-08 09:23:23 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'zorro ARK',
+)
+2021-03-08 09:23:26 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'zorro',
+)
+2021-03-08 09:36:02 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 559,kielet()
+2021-03-08 09:36:02 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 594,rating()
+2021-03-08 09:36:02 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 599,specialfeatures()
+2021-03-08 09:36:21 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'zorro ARK',
+)
+2021-03-08 09:36:29 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'zorro',
+)
+2021-03-08 09:37:06 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 559,kielet()
+2021-03-08 09:37:06 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 594,rating()
+2021-03-08 09:37:06 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 599,specialfeatures()
+2021-03-08 09:46:29 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 561,kielet()
+2021-03-08 09:46:29 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 596,rating()
+2021-03-08 09:46:29 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 601,specialfeatures()
+2021-03-08 09:48:30 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 561,kielet()
+2021-03-08 09:48:30 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 596,rating()
+2021-03-08 09:48:31 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 601,specialfeatures()
+2021-03-08 09:50:00 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 561,kielet()
+2021-03-08 09:50:00 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 596,rating()
+2021-03-08 09:50:00 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 601,specialfeatures()
+2021-03-08 09:51:36 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 561,kielet()
+2021-03-08 09:51:36 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 596,rating()
+2021-03-08 09:51:36 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 601,specialfeatures()
+2021-03-08 09:53:47 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 562,kielet()
+2021-03-08 09:53:47 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 597,rating()
+2021-03-08 09:53:48 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 602,specialfeatures()
+2021-03-08 10:00:04 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 562,kielet()
+2021-03-08 10:00:04 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 597,rating()
+2021-03-08 10:00:04 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 602,specialfeatures()
+2021-03-08 10:02:01 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 562,kielet()
+2021-03-08 10:02:01 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 597,rating()
+2021-03-08 10:02:01 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 602,specialfeatures()
+2021-03-08 10:03:13 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 562,kielet()
+2021-03-08 10:03:14 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 597,rating()
+2021-03-08 10:03:14 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 602,specialfeatures()
+2021-03-08 10:04:23 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 562,kielet()
+2021-03-08 10:04:24 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 597,rating()
+2021-03-08 10:04:24 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 602,specialfeatures()
+2021-03-08 10:10:19 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'zorro ARK',
+)
+2021-03-08 10:10:23 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'zorro',
+)
+2021-03-09 12:12:53 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 562,kielet()
+2021-03-09 12:12:53 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 597,rating()
+2021-03-09 12:12:53 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 602,specialfeatures()
+2021-03-09 12:13:25 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'zorro ark',
+)
+2021-03-09 12:13:37 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'zorro',
+)

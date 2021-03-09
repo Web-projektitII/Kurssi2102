@@ -7,6 +7,7 @@
  * tekniikkaan perustuvaa validointia.
 */
 if (!session_id()) session_start();
+include("virhetekstit.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -33,6 +34,9 @@ if (!session_id()) session_start();
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 <script>
+var virhetekstit = <?php echo json_encode($virhetekstit);?> 
+//console.log("virhetekstit:",virhetekstit);
+console.log("virhetekstit['title']:",virhetekstit['title']);
 var str = '0,01';
 var desimaalit = 3;
 //var pattern = /^\d+(,\d{1,2}){0,1}$/;    
@@ -76,7 +80,7 @@ function tulosta_virhe(nimi,data){
   /* Bootstrap 4-virhemuotoilu */
   input.classList.remove('is-invalid');
   var virhe_elementti = document.querySelector("[name='"+nimi+"'] ~ .invalid-feedback");
-  virhe_elementti.innerHTML = "Kirjoita nimi";
+  virhe_elementti.innerHTML = virhetekstit[nimi];
   /* Huom. reportValidity() jätetään pois */
   console.log("customError:"+input.validity.customError);
   }   
@@ -102,7 +106,7 @@ fetch('./tehtava_lomakekasittelija.php', {
   if (data !== 'OK') tulosta_virhe(nimi,data);
   else removeError(nimi);
   })
-.catch((error) => {
+.catch(error => {
   console.error('Error:',error);
   tulosta_virhe(nimi,error);
 });
@@ -533,7 +537,7 @@ while ($row = $result->fetch_assoc()){
 <label class="control-label col-sm-2 relative">Nimi:</label><span class="<?php virhe('title');?>">*</span>
 <div class="col-sm-10">
 <input id = "title" onchange="tarkistus(this)" required class="form-control teksti" type="text" name="title" value="<?php nayta('title');?>">
-<div class="invalid-feedback">Kirjoita nimi.</div>
+<div class="invalid-feedback"><?php echo $virhetekstit['title'];?></div>
 <?php server_validation('title');?>
 </div></div>
 <div class="form-group row">
@@ -541,14 +545,14 @@ while ($row = $result->fetch_assoc()){
 <div class="col-sm-10">
 <textarea required class="form-control teksti" rows="4" cols="40" name="description"><?php nayta('description');?></textarea>
 <!--<div class="valid-feedback">Ok</div>-->
-<div class="invalid-feedback">Kirjoita kuvaus.</div>
+<div class="invalid-feedback"><?php echo $virhetekstit['description'];?></div>
 <?php server_validation('description');?>
 </div></div>
 <div class="form-group row">
 <label class="control-label col-sm-2">Julkaisuvuosi:</label><span class="<?php virhe('release_year');?>">*</span>
 <div class="col-sm-10">
 <input required class="form-control lukema" min="1900" max="2100" type="number" name="release_year" placeholder="2019" value="<?php nayta('release_year');?>">
-<div class="invalid-feedback">Lisää julkaisuvuosi.</div>
+<div class="invalid-feedback"><?php echo $virhetekstit['release_year'];?></div>
 <?php server_validation('release_year');?>
 </div></div>
 <div class="form-group row">
@@ -563,7 +567,7 @@ while ($row = $result->fetch_assoc()){
 <label class="control-label col-sm-2">Vuokra-aika:</label><span class="<?php virhe('rental_duration');?>">*</span>
 <div class="col-sm-10">
 <input required class="form-control lukema" type="number" max="365" name="rental_duration" placeholder="1" value="<?php nayta('rental_duration');?>"><span class="yksikko">pv</span><br>
-<div class="invalid-feedback">Lisää vuokra-aika.</div>  
+<div class="invalid-feedback"><?php echo $virhetekstit['rental_duration'];?></div>  
 <?php server_validation('rental_duration');?>
 </div></div>
 <div class="form-group row">
