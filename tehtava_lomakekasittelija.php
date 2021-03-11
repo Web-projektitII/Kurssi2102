@@ -62,6 +62,23 @@ return;
 }
 
 debuggeri(basename($_SERVER['SCRIPT_NAME']).",post:".var_export($_POST,true));
+$ajax = (isset($_POST['validation']) and !empty($_POST['validation']));  
+$db = new mysqli('localhost','root','jukka1','sakila');
+if ($db->connect_errno){
+  palaute($ajax,"Virhe tietokantayhteydessä.");
+  exit;
+  }  
+
+if (isset($_POST['title']) && !isset($_POST['validate'])){
+  $title = trim(strip_tags($_POST['title'])); 	
+  $title = $db->real_escape_string($title);
+  $query = "SELECT 1 FROM film WHERE title = '$title'";
+  $result = $db->query($query);
+  $msg = (mysqli_num_rows($result)) ? "Samanniminen elokuva on jo olemassa." : "OK";
+  echo json_encode($msg);
+  exit;
+  }
+
 $error_required = array();
 $error_numeric = array();
 $kentat = array('title','description','release_year','language_id',
@@ -76,7 +93,7 @@ foreach ($kentat AS $kentta) {
 	$error_numeric[$kentta] = true;
   }	
   
-$ajax = (isset($_POST['validation']) and !empty($_POST['validation']));  
+
 if ($error_required or $error_numeric){
   if ($ajax){
     /* Huom. assosiatiivinen array muuntuu Ajaxissa Javascript-objektiksi.
@@ -116,11 +133,7 @@ if ($error_required or $error_numeric){
     echo "<script>document.forms['error_form'].submit();</script>";
     }
   }
-$db = new mysqli('localhost','root','jukka1','sakila');
-if ($db->connect_errno){
-  palaute($ajax,"Virhe tietokantayhteydessä.");
-  exit;
-  }  
+
 /*
 $query = "SELECT f.title,c.name FROM film f,film_category fc,category c WHERE
           fc.film_id = f.film_id AND c.category_id = fc.category_id AND f.title LIKE 'A%'";
@@ -157,8 +170,8 @@ $release_year = $_POST['release_year'];
 $query = "SELECT 1 FROM film WHERE title = '$title'
    AND description = '$description' 
    AND release_year = '$release_year'";
-   $result = $db->query($query);
-   if (mysqli_num_rows($result)){
+$result = $db->query($query);
+if (mysqli_num_rows($result)){
       if ($ajax){
         $virheet['title'] = true;
         $virheet['description'] = true;
