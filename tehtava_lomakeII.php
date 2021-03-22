@@ -429,7 +429,8 @@ if (!$local) {
   $password = "6#vWHD_$";
   $user = "azure";
   //$server = "localhost:49492";
-  $server = "localhost:50431";
+  //$server = "localhost:50431";
+  $server = "localhost:51008";
   }
 else {
   $password = "jukka1";
@@ -441,8 +442,8 @@ else {
 
 try {
   $db = new mysqli($server,$user,$password,'sakila');
-  if (mysqli_connect_errno()){  
-    throw new Exception("Virhe tietokantayhteydessä", 42);
+  if ($db_error = mysqli_connect_errno()){  
+    throw new Exception("Virhe tietokantayhteydessä $server",$db_error);
     }
   }
 catch (Exception $e) {
