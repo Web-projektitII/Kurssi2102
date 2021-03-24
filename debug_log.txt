@@ -648,3 +648,37 @@ tehtava_lomakeII.php,rivi 602,specialfeatures()
 2021-03-09 12:13:37 tehtava_lomakekasittelija.php,post:array (
   'title' => 'zorro',
 )
+2021-03-24 13:31:21 kielet,SELECT language_id,name FROM language ORDER BY name
+tehtava_lomakeII.php,rivi 563,kielet()
+2021-03-24 13:31:21 rating,SHOW COLUMNS FROM film LIKE 'rating'
+tehtava_lomakeII.php,rivi 598,rating()
+2021-03-24 13:31:21 specialfeatures,SHOW COLUMNS FROM film LIKE 'special_features'
+tehtava_lomakeII.php,rivi 603,specialfeatures()
+2021-03-24 13:31:33 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'Zorro',
+)
+2021-03-24 13:31:58 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'Zorro Returns',
+)
+2021-03-24 13:32:40 tehtava_lomakekasittelija.php,post:array (
+  'title' => 'Zorro Returns',
+  'description' => 'Tämä on uusi elokuva.',
+  'release_year' => '2021',
+  'language_id' => '1',
+  'rental_duration' => '7',
+  'rental_rate' => '9,95',
+  'length' => '220',
+  'replacement_cost' => '50',
+  'rating' => 'NC-17',
+  'special_features' => 
+  array (
+    0 => 'Trailers',
+    1 => 'Commentaries',
+    2 => 'Deleted Scenes',
+    3 => 'Behind the Scenes',
+  ),
+  'validate' => '1',
+  'validation' => '1',
+)
+2021-03-24 13:32:41 tehtava_lomakekasittelija.php,INSERT INTO film (title,description,release_year,language_id,rental_duration,rental_rate,length,replacement_cost,rating,special_features) VALUES ('Zorro Returns','Tämä on uusi elokuva.','2021','1','7','9.95','220','50','NC-17','Trailers,Commentaries,Deleted Scenes,Behind the Scenes')
+2021-03-24 13:32:41 Mailer Error: SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting
