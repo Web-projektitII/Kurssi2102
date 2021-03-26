@@ -11,6 +11,7 @@ function tulosta_alkio($k,$v){
   echo "$k:$v<br>";
   }
 function tulosta_array($a){
+  ksort($a);
   array_map("tulosta_alkio", array_keys($a),$a);
   }
 tulosta_array($_SERVER);  
