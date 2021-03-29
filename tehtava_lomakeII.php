@@ -16,17 +16,6 @@ include("virhetekstit.php");
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Bootstrap 3 
-<link rel="stylesheet" href="bootstrap.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>-->
-
-<!-- Bootstrap 4.3.1
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
-
 <!-- Bootstrap 4.4.1 -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -123,8 +112,6 @@ function toggleError(nimi){
   //$("[name='"+nimi+"']").parent().find(".form-control").addClass('is-invalid');
    $("[name='"+nimi+"']").addClass('is-invalid');
   }    
-  
-
   
 function piilotaVirheet(){
   $('#palaute').text('');  
@@ -321,18 +308,12 @@ if ($result !== false){
   $str = trim(substr($row['Type'],3),'()');
   $strArr = explode(",",$str);
   }
-//var_export($strArr);
-//echo "str:$str<br>";
-//var_dump($result);
 //var_export($_POST['special_features']);
 foreach ($strArr AS $feature){
   $f = trim($feature,"'");
   $box_set = isset($_POST['special_features']);
   $feature_set = ($box_set and in_array($f,$_POST['special_features']));  
   $checked = ($feature_set) ? "checked=\"checked\"" : "";
-  //echo "$feature,checked:$checked,feature_set:$feature_set,box_set:$box_set<br>";
-  //echo "<label>$f</label><span class=\"tyhja\"></span><input type=\"checkbox\" name=\"special_features[]\" 
-  //      value=$feature $checked><br>";
   echo "<div class=\"checkbox\"><label class=\"form-check-label\"><input class=\"form-check-input\" type=\"checkbox\" name=\"special_features[]\" "
        . "value=$feature $checked>$f</label></div>";
   }	
@@ -351,19 +332,12 @@ if ($result !== false){
   $str = $row['Type'];
   preg_match('/enum\((.*)\)$/',$str,$matches);
   $strArr = explode(",",$matches[1]);
-//var_export($strArr);
-//echo "str:$str<br>";
-//var_dump($result);
-//var_export($_POST['special_features']);
   }
 echo "<ul class=\"list-group list-group-horizontal\">";
 foreach ($strArr AS $rating){
   $r = trim($rating,"'");
   $rating_set = (isset($_POST['rating']) and $r == $_POST['rating']);  
   $checked = ($rating_set) ? "checked=\"checked\"" : "";
-  //echo "$feature,checked:$checked,feature_set:$feature_set,box_set:$box_set<br>";
-  //echo "<li class=\"list-group-item\"><label class=\"radio\">$r</label><input type=\"radio\" name=\"rating\" 
-  //      value=$rating $checked></li>";
   echo "<li class=\"list-group-item\"><input class=\"form-check-input\" type=\"radio\" name=\"rating\" 
         value=$rating $checked required><label class=\"form-check-label\">$r</label></li>";
   }	
@@ -408,7 +382,8 @@ if (haevirheluokat($kentta) <> 'tyhja'){
 }
 
 function nayta($kentta){
-echo isset($_POST[$kentta]) ? $_POST[$kentta] : ""; 
+//echo isset($_POST[$kentta]) ? $_POST[$kentta] : ""; 
+echo $_POST[$kentta] ?: '';
 return;
 }
 
@@ -426,19 +401,14 @@ register_shutdown_function('debuggeri_shutdown');
 //debug_test_error_handler();
 $local = in_array($_SERVER['REMOTE_ADDR'],array('127.0.0.1','REMOTE_ADDR' => '::1'));
 if (!$local) {	
-  $password = "6#vWHD_$";
-  $user = "azure";
-  //$server = "localhost:49492";
-  //$server = "localhost:50431";
-  $server = "localhost:51008";
-  }
+  $password = $db_password_remote;
+  $user = $db_username_remote;
+  $server = $db_server_remote;
 else {
-  $password = "jukka1";
-  $user = "root";
-  $server = "127.0.0.1";	
+  $password = $db_password_local;
+  $user = $db_username_local;
+  $server = $db_server_local;	
   }
-//echo "server:$server,user:$user";
-//exit;
 
 try {
   $db = new mysqli($server,$user,$password,'sakila');
@@ -457,7 +427,7 @@ catch (Exception $e) {
 $errors_r = isset($_POST['error_required']) ? $_POST['error_required'] : array();
 $errors_n = isset($_POST['error_numeric']) ? $_POST['error_numeric'] : array();  
   
-  /*
+/*
 $query = "SELECT f.title,c.name FROM film f,film_category fc,category c WHERE
   fc.film_id = f.film_id AND c.category_id = fc.category_id
   AND c.name LIKE '".$_POST['genre']."'";
@@ -474,8 +444,6 @@ while ($row = $result->fetch_assoc()){
 */
 
 ?>
-  
- 
 <nav class="navbar navbar-expand-md navbar-light bg-light">
   <a class="navbar-brand" href="#"><img class="img-responsive" src="company_logo.png" width="120" height="39" alt="company_logo"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
